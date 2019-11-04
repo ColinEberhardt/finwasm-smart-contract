@@ -12,6 +12,7 @@
     "near-runtime-ts": "nearprotocol/near-runtime-ts#ad5538114017ec411bab0ddbe5d20fd2be4df7d0"
   },
   "devDependencies": {
+    "assemblyscript": "AssemblyScript/assemblyscript",
     "near-shell": "nearprotocol/near-shell#570f32f30d2c385863f7deefdd9f06796221753c",
     "serve": "^11.1.0"
   }

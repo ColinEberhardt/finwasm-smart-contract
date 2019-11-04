@@ -375,6 +375,17 @@ assemblyscript-json@^0.2.0:
   resolved "https://registry.yarnpkg.com/assemblyscript-json/-/assemblyscript-json-0.2.0.tgz#e308c469547d26c7e9a7ef670a83b67061c7401c"
   integrity sha512-feJLBrec5O600QytfpkFb9oUYc+rANwtEUuSfIxVmjGcup4uR42maQTWOuIv8w/YOsHDMYHTXCwPQsuCynrwKA==
 
+assemblyscript@AssemblyScript/assemblyscript:
+  version "0.7.0"
+  resolved "https://codeload.github.com/AssemblyScript/assemblyscript/tar.gz/145d8ac7773725f8c78e1f66fd108389027ebc10"
+  dependencies:
+    "@protobufjs/utf8" "^1.1.0"
+    binaryen "89.0.0-nightly.20191012"
+    glob "^7.1.4"
+    long "^4.0.0"
+    opencollective-postinstall "^2.0.0"
+    source-map-support "^0.5.13"
+
 assign-symbols@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
@@ -428,6 +439,11 @@ binaryen@89.0.0-nightly.20190918:
   version "89.0.0-nightly.20190918"
   resolved "https://registry.yarnpkg.com/binaryen/-/binaryen-89.0.0-nightly.20190918.tgz#5bdc37f07fe89cc16ea0e64e24d99555cdf6996c"
   integrity sha512-3ToFheQo+qOg3N8IFArHqLEcKljmTA++DQxcyLAvMYvc0GsTlPWdXAj4BAndi1IngQqAXUQRx8LdIxPAddTxww==
+
+binaryen@89.0.0-nightly.20191012:
+  version "89.0.0-nightly.20191012"
+  resolved "https://registry.yarnpkg.com/binaryen/-/binaryen-89.0.0-nightly.20191012.tgz#4079f4399cd3961f876aa1c913c0c9546f1c23f8"
+  integrity sha512-ipKFZEyrMnFuEPCzEsXZ80DwZhGzrPldQ+vtcyCfdr8O75PKawfll1gmdWg4sUtzjSnfdvK9NiYfzm021lDNUg==
 
 bn.js@^5.0.0:
   version "5.0.0"
@@ -1706,7 +1722,7 @@ near-assemblyscript@^0.7.4:
     opencollective-postinstall "^2.0.0"
     source-map-support "^0.5.13"
 
-"near-runtime-ts@github:nearprotocol/near-runtime-ts":
+near-runtime-ts@nearprotocol/near-runtime-ts#ad5538114017ec411bab0ddbe5d20fd2be4df7d0:
   version "0.5.1"
   resolved "https://codeload.github.com/nearprotocol/near-runtime-ts/tar.gz/ad5538114017ec411bab0ddbe5d20fd2be4df7d0"
   dependencies:

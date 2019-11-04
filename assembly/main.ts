@@ -1,4 +1,3 @@
-//@nearfile
 import { context, PersistentVector } from "near-runtime-ts";
 
 let tickets = new PersistentVector<string>("m");
