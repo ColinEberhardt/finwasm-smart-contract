@@ -1,0 +1,18 @@
+{
+  "name": "@wasm/token_contract_ts",
+  "description": "",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "mkdir -p out/ && node build.js",
+    "deploy:contract": "near deploy",
+    "prestart": "npm run build && npm run deploy:contract",
+    "start": "serve src"
+  },
+  "dependencies": {
+    "near-runtime-ts": "nearprotocol/near-runtime-ts#ad5538114017ec411bab0ddbe5d20fd2be4df7d0"
+  },
+  "devDependencies": {
+    "near-shell": "nearprotocol/near-shell#570f32f30d2c385863f7deefdd9f06796221753c",
+    "serve": "^11.1.0"
+  }
+}

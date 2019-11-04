@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <style>
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 970px;
+        }
+      }
+
+      ul {
+        padding-left: 0;
+      }
+
+      li svg {
+        margin-right: 10px;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      #remaining-places {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body style="background: #fff">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <img src="logo.png" alt="" class="img-fluid" />
+        </div>
+        <div class="col-sm-4">
+          <h1>FinWasm</h1>
+          <ul>
+            <li>
+              <svg
+                viewBox="0 0 16 16"
+                width="20"
+                height="20"
+                id="icon-location-pin--small"
+              >
+                <title>location-pin--small</title>
+                <path
+                  d="M7.972 7.606a.79.79 0 0 1-.778-.8c0-.441.349-.8.778-.8.43 0 .778.359.778.8 0 .44-.348.8-.778.8m0-2.4c-.858 0-1.555.717-1.555 1.6 0 .882.697 1.6 1.555 1.6s1.556-.718 1.556-1.6c0-.883-.698-1.6-1.556-1.6m2.215 8.816A2.652 2.652 0 0 1 7.972 15.2a2.652 2.652 0 0 1-2.214-1.178c-2.113-3.09-3.23-5.585-3.23-7.217C2.528 2.905 5.332.8 7.972.8s5.445 2.105 5.445 6.005c0 1.632-1.118 4.128-3.23 7.217M7.972 0C4.913 0 1.75 2.546 1.75 6.805c0 1.823 1.135 4.406 3.372 7.677.66.965 1.7 1.518 2.85 1.518 1.151 0 2.19-.553 2.85-1.518 2.238-3.27 3.372-5.854 3.372-7.677C14.194 2.545 11.031 0 7.972 0"
+                  fill-rule="evenodd"
+                ></path></svg
+              >London, United Kingdom
+            </li>
+            <li>
+              <svg
+                viewBox="0 0 16 16"
+                width="20"
+                height="20"
+                id="icon-profiles--small"
+              >
+                <title>profiles--small</title>
+                <path
+                  d="M11.816 9.085c.199.266.372.55.518.853 1.192.275 2.087 1.376 2.087 2.694 0 .87-.679 1.579-1.513 1.579h-.692c-.204.303-.46.562-.742.789h1.434c1.271 0 2.303-1.061 2.303-2.368 0-1.94-1.516-3.514-3.395-3.547m-3.908-1.19H5.145C2.856 7.895 1 9.804 1 12.159 1 13.727 2.238 15 3.763 15H9.29c1.527 0 2.764-1.273 2.764-2.841 0-2.355-1.856-4.264-4.145-4.264m2.566-4.737c-.178 0-.35.023-.516.06.016.137.042.271.042.414 0 .14-.026.273-.041.409a1.57 1.57 0 0 1 .515-.094 1.58 1.58 0 0 1 0 3.158 1.578 1.578 0 0 1-1.465-.997 3.595 3.595 0 0 1-.612.535 2.36 2.36 0 0 0 4.445-1.117 2.368 2.368 0 0 0-2.368-2.368M6.368.789a2.842 2.842 0 1 0 0 5.685 2.842 2.842 0 0 0 0-5.685m1.54 7.895c1.85 0 3.355 1.559 3.355 3.475 0 1.131-.885 2.052-1.974 2.052H3.763c-1.088 0-1.974-.921-1.974-2.052 0-1.916 1.506-3.475 3.356-3.475h2.763M6.368 1.58c1.133 0 2.053.92 2.053 2.053 0 1.13-.92 2.052-2.053 2.052a2.056 2.056 0 0 1-2.052-2.052c0-1.133.921-2.053 2.052-2.053"
+                  fill-rule="evenodd"
+                ></path></svg
+              >4,538 members
+            </li>
+            <li>
+              <svg
+                viewBox="0 0 16 16"
+                width="20"
+                height="20"
+                id="icon-profile--small"
+              >
+                <title>profile--small</title>
+                <path
+                  d="M11.033 15.2H4.811c-1.286 0-2.333-1.077-2.333-2.4 0-2.206 1.744-4 3.889-4h3.11c2.145 0 3.89 1.794 3.89 4 0 1.323-1.047 2.4-2.334 2.4M9.478 8H6.367C3.79 8 1.7 10.15 1.7 12.8c0 1.767 1.393 3.2 3.111 3.2h6.222c1.718 0 3.111-1.433 3.111-3.2 0-2.65-2.09-4.8-4.666-4.8M7.922.8c1.287 0 2.334 1.077 2.334 2.4S9.209 5.6 7.922 5.6C6.636 5.6 5.59 4.523 5.59 3.2S6.636.8 7.922.8m0 5.6c1.718 0 3.111-1.433 3.111-3.2 0-1.767-1.393-3.2-3.11-3.2C6.203 0 4.81 1.433 4.81 3.2c0 1.767 1.393 3.2 3.111 3.2"
+                  fill-rule="evenodd"
+                ></path></svg
+              >Organized by <b>Colin Eberhardt</b>
+            </li>
+          </ul>
+
+          <p><span id="remaining-places">--</span> places remaining</p>
+
+          <div class="state state-signed-in" style="display: none;">
+            <div class="no-attending-yet">
+              <button class="btn btn-success attend-meetup">
+                Attend Meetup
+              </button>
+              <button class="btn btn-light sign-out">Sign Out</button>
+            </div>
+          </div>
+
+          <div class="state state-signed-up" style="display: none;">
+            <p><i>Congratulations, your name is on the list!</i></p>
+          </div>
+
+          <div class="state state-sign-in-required" style="display: none;">
+            <button class="btn btn-success sign-in">Sign In</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <p>
+              <h3>Welcome to the Biggest WebAssembly for Finance Conference</h3>
+            </p>
+            <p>
+              FinWasm is a capital markets network that showcases innovations
+              driven by WebAssembly technologies. FinWasm events are invite-only
+              and include CTOs, eCommerce managers, development managers,
+              product managers and other thought-leaders from banks, buy-side,
+              and industry-leading technology platforms.
+            </p>
+          </div>
+          <div class="col-sm-4"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/nearlib@0.16.0/dist/nearlib.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="./config.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
