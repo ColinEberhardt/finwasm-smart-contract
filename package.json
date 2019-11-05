@@ -1,18 +1,20 @@
 {
-  "name": "@wasm/token_contract_ts",
+  "name": "finwasm-smart-contract",
   "description": "",
   "version": "0.0.1",
   "scripts": {
     "build": "mkdir -p out/ && node build.js",
-    "deploy:contract": "near deploy",
-    "prestart": "npm run build && npm run deploy:contract",
-    "start": "serve src"
+    "deploy:contract": "near deploy --contractName fin-wasm",
+    "deploy:website": "gh-pages -d web",
+    "prestart": "npm run build && npm run deploy:contract && npm run deploy:website",
+    "start": "serve web"
   },
   "dependencies": {
     "near-runtime-ts": "nearprotocol/near-runtime-ts#ad5538114017ec411bab0ddbe5d20fd2be4df7d0"
   },
   "devDependencies": {
     "assemblyscript": "AssemblyScript/assemblyscript",
+    "gh-pages": "^2.1.1",
     "near-shell": "nearprotocol/near-shell#570f32f30d2c385863f7deefdd9f06796221753c",
     "serve": "^11.1.0"
   }
