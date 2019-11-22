@@ -14,7 +14,7 @@ let contract, walletAccount;
   walletAccount = new nearlib.WalletAccount(near);
   contract = await near.loadContract(nearConfig.contractName, {
     viewMethods: ["getRemainingTicketCount", "getAttendeeList"],
-    changeMethods: ["signUp", "hasSignedUp"],
+    changeMethods: ["signUp", "hasSignedUp", "test"],
     sender: walletAccount.getAccountId()
   });
 
