@@ -1,4 +1,6 @@
 
+let contract, walletAccount;
+
 (async () => {
 
   // connect to the near network
@@ -9,8 +11,8 @@
   );
 
   // obtain the wallet account and smart contract
-  const walletAccount = new nearlib.WalletAccount(near);
-  const contract = await near.loadContract(nearConfig.contractName, {
+  walletAccount = new nearlib.WalletAccount(near);
+  contract = await near.loadContract(nearConfig.contractName, {
     viewMethods: ["getRemainingTicketCount", "getAttendeeList"],
     changeMethods: ["signUp", "hasSignedUp"],
     sender: walletAccount.getAccountId()
@@ -24,7 +26,7 @@
     );
     document.querySelector("." + state).style = "display: block;";
   
-    // fetch the remaining placees
+    // fetch the remaining places
     const ticketCount = await contract.getRemainingTicketCount();
     document.getElementById("remaining-places").innerText = ticketCount;
   }
