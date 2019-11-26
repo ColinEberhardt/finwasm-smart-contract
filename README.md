@@ -1,32 +1,9 @@
-# Counter example in AssemblyScript
+# FinWASM meetup website
 
-## Description
+You can view the [FinWASM event website online](https://colineberhardt.github.io/finwasm-smart-contract/).
 
-This contract implements simple counter backed by storage on blockchain.
-Contract in `assembly/main.ts` provides method to increment / decrement counter and get it's current value.
+This is a spoof event website, where the sign-up is managed via a smart contract, written using [AssemblyScript](https://docs.assemblyscript.org/), running on the [NEAR protocol](https://nearprotocol.com/) blockchain network.
 
-## To Run
+## Development
 
-*In NEAR Studio (https://studio.nearprotocol.com)*
-
-1. Click the "Run" button on the top of the Studio window
-
-2. You will be redirected to the new window that should display instructions for using counter from JS console.
-
-
-## To Test
-
-*In NEAR Studio (https://studio.nearprotocol.com)*
-
-1. Click the "Test" button on the top of the Studio window
-
-2. You will be redirected to the output for the JavaScript tests described in `src/test.js` to show that the contract is performing properly.
-
-## To Explore
-
-- `assembly/main.ts` for the contract code
-- `src/index.html` for the front-end HTML
-- `src/main.js` for the JavaScript front-end code and how to integrate contracts
-- `src/test.js` for the JS tests for the contract
-
-
+To run this locally, you'll need to create a NEAR account - you can find details about how to sign up, and more information about smart contract development on my blog post, [WebAssembly on the Blockchain and JavaScript Smart Contracts](https://blog.scottlogic.com/2019/11/26/webassembly-on-the-blockchain.html).

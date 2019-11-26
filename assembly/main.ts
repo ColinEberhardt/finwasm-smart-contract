@@ -1,4 +1,4 @@
-import { context, PersistentVector } from "near-runtime-ts";
+import { context, PersistentVector, logging } from "near-runtime-ts";
 
 let tickets = new PersistentVector<string>("m");
 

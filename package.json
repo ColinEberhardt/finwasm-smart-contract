@@ -5,9 +5,9 @@
   "scripts": {
     "build": "mkdir -p out/ && node build.js",
     "deploy:contract": "near deploy --contractName fin-wasm",
-    "deploy:website": "gh-pages -d web",
+    "deploy:website": "gh-pages -d src",
     "prestart": "npm run build && npm run deploy:contract && npm run deploy:website",
-    "start": "serve web"
+    "start": "npx live-server src"
   },
   "dependencies": {
     "near-runtime-ts": "nearprotocol/near-runtime-ts#ad5538114017ec411bab0ddbe5d20fd2be4df7d0"
@@ -15,7 +15,6 @@
   "devDependencies": {
     "assemblyscript": "AssemblyScript/assemblyscript",
     "gh-pages": "^2.1.1",
-    "near-shell": "nearprotocol/near-shell#570f32f30d2c385863f7deefdd9f06796221753c",
-    "serve": "^11.1.0"
+    "near-shell": "nearprotocol/near-shell#570f32f30d2c385863f7deefdd9f06796221753c"
   }
 }
