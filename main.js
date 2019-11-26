@@ -1,3 +1,9 @@
+const nearConfig = {
+  networkId: "default",
+  nodeUrl: "https://rpc.nearprotocol.com",
+  contractName: "fin-wasm",
+  walletUrl: "https://wallet.nearprotocol.com"
+};
 
 let contract, walletAccount;
 
@@ -14,7 +20,7 @@ let contract, walletAccount;
   walletAccount = new nearlib.WalletAccount(near);
   contract = await near.loadContract(nearConfig.contractName, {
     viewMethods: ["getRemainingTicketCount", "getAttendeeList"],
-    changeMethods: ["signUp", "hasSignedUp", "test"],
+    changeMethods: ["signUp", "hasSignedUp"],
     sender: walletAccount.getAccountId()
   });
 
@@ -60,21 +66,3 @@ let contract, walletAccount;
     updateUI("state-sign-in-required");
   }
 })();
-
-
-// async function connectMock() {
-//   window.walletAccount = {
-//     getAccountId: () => "colineberhardt"
-//   };
-
-//   let tickets = 50;
-
-//   window.contract = {
-//     getRemainingTicketCount: () => Promise.resolve(tickets),
-//     signUp: () => {
-//       tickets--;
-//       return Promise.resolve("success");
-//     },
-//     hasSignedUp: () => Promise.resolve(false)
-//   };
-// }
